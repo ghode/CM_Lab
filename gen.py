@@ -4,9 +4,21 @@ def fun(x1):
 
 n = 80
 h = 10.0 / n
-x = []
+xS = []
 f = open("in.txt", mode='w')
-f.write(str(n) + " 4.75\n")
+f.write(str(n) + "\n")
+
 for k in range(0, n + 1):
-    x.append(-5.0 + k * h)
-    f.write(str(x[k]) + " " + str(fun(x[k])) + "\n")
+    xS.append(-5.0 + k * h)
+    f.write(str(xS[k]) + " " + str(fun(xS[k])) + "\n")
+
+x = 0.75
+f.write(str(x) + "\n")
+x = 1.75
+f.write(str(x) + "\n")
+x = 2.75
+f.write(str(x) + "\n")
+x = 3.75
+f.write(str(x) + "\n")
+x = 4.75
+f.write(str(x) + "\n")
