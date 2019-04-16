@@ -2,10 +2,11 @@ def fun(x1):
     return 1.0 / (1.0 + x1 * x1)
 
 
-n = 80
+n = 20
 h = 10.0 / n
 xS = []
 f = open("in.txt", mode='w')
+f.write("when n = " + str(n) + "\n")
 f.write(str(n) + "\n")
 
 for k in range(0, n + 1):

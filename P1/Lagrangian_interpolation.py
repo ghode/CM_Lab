@@ -3,6 +3,7 @@ import os
 os.system("python gen.py")
 
 file = open("in.txt", "r")
+print(file.readline())
 n = int(file.readline())
 x1 = []
 y1 = []
